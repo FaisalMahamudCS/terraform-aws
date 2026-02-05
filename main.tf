@@ -1,5 +1,5 @@
 #######################
-# Example AWS resources
+ AWS resources
 #######################
 
 resource "aws_instance" "web" {
@@ -12,12 +12,12 @@ output "instance_detail" {
 }
 # Specify provider
 provider "aws" {
-  region = "us-east-1"  # Change to your preferred region
+  region = "us-east-1"  
 }
 
 # Create an S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-bucket-name-12345"  # Must be globally unique
+  bucket = "s3-sgp-bucket"  
   acl    = "private"
 
   tags = {

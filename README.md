@@ -1,2 +1,3 @@
 # terraform-aws
-create s3 
+create s3
+terraform apply
